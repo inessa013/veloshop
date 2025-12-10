@@ -1,0 +1,18 @@
+.link {
+    color: var(--color-base);
+    text-decoration: underline;
+    transition: background-color var(--transition-duration), color var(--transition-duration);
+
+    &:focus-visible {
+        outline: none;
+        background-color: var(--color-accent);
+    }
+
+    &:hover {
+        color: var(--color-hover);
+    }
+
+    &:active { 
+        color: var(--color-active);
+    }
+}

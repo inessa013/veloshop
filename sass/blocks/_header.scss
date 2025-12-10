@@ -1,0 +1,46 @@
+.header {
+    background-color: var(--color-base);
+
+    &__container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 20px;
+    }
+
+    &__wrapper-logo {
+        background-color: var(--color-accent);
+        padding: 22px;;
+    }
+
+    &__logo {
+        min-width: 154px;
+    }
+
+    .menu {
+        display: flex;
+        gap: 50px;
+
+        &__link {
+            color: var(--color-white);
+            font-family: "Inter", sans-serif;
+            outline: 1px solid transparent;
+            outline-offset: 7px;
+            border-radius: 8px;
+            transition: ouline-color var(--transition-duration), color var(--transition-duration);
+
+            &:focus-visible {
+                outline-color: var(--color-white);
+            }
+
+            &:hover {
+                color: var(--color-accent);
+            }
+
+            &:active {
+                color: var(--color-active);
+            }
+        }
+    }
+
+}

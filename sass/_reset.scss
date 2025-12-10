@@ -1,0 +1,88 @@
+// -------------------------------------
+// Reset.scss – современный сброс стилей
+// -------------------------------------
+
+// Базовые переменные (можно менять под проект)
+$font-size-base: 16px;
+$font-family-base: 'Arial', 'Helvetica', sans-serif;
+
+// Миксин для снятия стандартных отступов
+@mixin reset-mp {
+  margin: 0;
+  padding: 0;
+}
+
+// Общие сбросы
+*,
+*::before,
+*::after {
+  @include reset-mp;
+  box-sizing: border-box;
+}
+
+// HTML и body
+html {
+  font-size: $font-size-base;
+}
+
+body {
+  font-family: $font-family-base;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+}
+
+// Текстовые элементы
+h1, h2, h3, h4, h5, h6,
+p, blockquote, figure,
+dl, dd {
+  @include reset-mp;
+}
+
+ul, ol {
+  @include reset-mp;
+  list-style: none;
+}
+
+// Ссылки
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+// Изображения и медиа
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+// Таблицы
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+// Формы
+button,
+input,
+select,
+textarea {
+  font: inherit;
+  border: none;
+  background: none;
+  outline: none;
+}
+
+// Убираем цитаты
+blockquote,
+q {
+  quotes: none;
+
+  &::before,
+  &::after {
+    content: '';
+  }
+}

@@ -1,0 +1,24 @@
+.button {
+    display: block;
+    padding: 11px 47px;
+    border-radius: var(--border-radius);
+    color: var(--color-base);
+    background-color: var(--color-accent);
+    text-align: center;
+    cursor: pointer;
+    transition: background-color var(--transition-duration), outline var(--transition-duration);
+    outline: 1px solid transparent;
+    outline-offset: 2px;
+
+    &:focus-visible {
+        outline-color: var(--color-accent);
+    }
+
+    &:hover {
+        background-color: var(--color-hover);
+    }
+
+    &:active {
+        background-color: var(--color-active);
+    }
+}

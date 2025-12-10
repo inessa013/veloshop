@@ -1,0 +1,38 @@
+.hero {
+    &__container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        align-items: center;
+        gap: 40px;
+    }
+
+    &__body {
+        max-width: 490px;
+        @include flexColumn(20px);
+        align-items: flex-start;
+
+    }
+
+    &__wrapper-img {
+    }
+
+    &__img {
+        height: 100%;
+        justify-self: flex-end;
+    }
+
+    &__title {
+        font-size: 34px;
+        font-weight: 700;
+    }
+
+    &__text {
+        font-size: 20px;
+        max-width: 360px;
+    }
+
+    &__button {
+        margin-top: 28px;
+        font-size: 21px;
+    }
+}
