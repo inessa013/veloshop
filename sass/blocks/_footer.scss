@@ -1,0 +1,10 @@
+.footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--color-outline);
+    &__logo {
+        padding: 22px;
+        opacity: .5;
+    }
+}

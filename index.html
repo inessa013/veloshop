@@ -15,8 +15,8 @@
             <ul class="header__menu menu">
                 <li class="menu__item"><a href="#catalog" class="menu__link">Каталог</a></li>
                 <li class="menu__item"><a href="#hero" class="menu__link">Новинки</a></li>
-                <li class="menu__item"><a href="#toorder" class="menu__link">Заказать</a></li>
-                <li class="menu__item"><a href="#toorder" class="menu__link">Контакты</a></li>
+                <li class="menu__item"><a href="#order" class="menu__link">Заказать</a></li>
+                <li class="menu__item"><a href="#order" class="menu__link">Контакты</a></li>
             </ul>
 
         </div>
@@ -31,14 +31,33 @@
                     </p>
                     <a href="#catalog" class="hero__button button">Выбрать велосипед</a>
                 </div>
-                <div class="hero__wrapper-img">
-                    <img src="./img/hero.png" alt="Фон первого блока Парень на велосипеде" class="hero__img">
+            </div>
+        </section>
+        <section class="order" id="order">
+            <div class="order__right">
+                <p class="order__text">
+                    Укажите номер телефона и мы с вам свяжемся для обсуждения заказа.
+                </p>
+                <form action="#" class="order__form">
+                    <input type="tel" class="order__input input" placeholder="Телефон" name="tel">
+                    <button type="submit" class="order__button button">Отправить</button>
+                </form>
+            </div>
+        </section>
+        <section class="catalog" id="catalog">
+            <div class="catalog__container container">
+                <h2 class="catalog__title title">Каталог</h2>
+                <div class="catalog__grid" data-catalog>
+
                 </div>
             </div>
         </section>
     </main>
+    <footer class="footer">
+            <img src="img/logo.png" alt="Лого" class="footer__logo logo">
+    </footer>
 
     <script src="js/products.js"></script>
-    <!-- <script src="js/script.js"></script> -->
+    <script src="js/script.js"></script>
 </body>
 </html>
